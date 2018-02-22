@@ -1,0 +1,54 @@
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Simulateur</a>
+
+    <button  type="button" class="navbar-brand" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="form-group">
+      <select class="form-control" id="langue">
+        <option selected>Fr</option>
+        <option>En</option>
+
+      </select>
+    </div>
+    <div>
+      <label class="switch">
+        <input class="navbar-brand" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-success active"  >Exterieur</button>
+      <button type="button" class="btn btn-primary">Interieur</button>
+    </div>
+    
+  </div>
+</nav> -->
+<nav class="navbar navbar-light bg-dark header">
+  <div class="navbar-brand">
+    <a class="navbar-brand" style="color: white" href="#">Simulateur</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button (click)="sendMessage()" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" (click)="presser();"
+      data-target="#collapsingNavbar3">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <span class="custom-dropdown custom-dropdown--white">
+      <select class="custom-dropdown__select custom-dropdown__select--white" id="langue">
+        <option selected>Fr</option>
+        <option>En</option>
+
+      </select>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src={{porte}} alt="porte" width="35 px" height="35px">
+    <img src={{fenetre}} alt="fenetre" width="35px" height="35px">
+  </div>
+
+  <div class="btn-group">
+    <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Exterieur" (click)="exterieur()">Exterieur</label>
+    <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Interieur" (click)="interieur()">Interieur</label>
+
+  </div>
+</nav>

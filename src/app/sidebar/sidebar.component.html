@@ -1,0 +1,257 @@
+<div class="pre-scrollable" id="style-3">
+  <ul id="menu-accordeon">
+    <li>
+      <button (click)="maMaisonCollapse = !maMaisonCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="fa fa-home text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Ma maison</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="maMaisonCollapse">
+        <li class="liClick">
+          <a >Maisons témoins</a>
+        </li>
+        <li class="liClick">
+          <a >Charger une photo</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="formeCollapse = !formeCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <!--<i class="material-icons text-white" style="font-size:24px;">format_shapes</i>-->
+              <i class="fa fa-object-ungroup text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Forme</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="formeCollapse">
+        <li>
+          <a >Ouverture</a>
+        </li>
+        <li>
+          <a >Type 2</a>
+        </li>
+        <li>
+          <a >Géométrique</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="materiauxCollapse = !materiauxCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="fa fa-wrench text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Matériaux</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="materiauxCollapse">
+        <li>
+          <a >Aluminium</a>
+        </li>
+        <li>
+          <a >Bois</a>
+        </li>
+        <li>
+          <a >PVC</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="couleursCollapse = !couleursCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="fa fa-paint-brush text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Couleurs</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="couleursCollapse">
+        <li>
+          <a >Teinté dans la masse</a>
+        </li>
+        <li>
+          <a >Plaquage en bois</a>
+        </li>
+        <li>
+          <a >Motifs</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="vitrageCollapse = !vitrageCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="fa fa-home text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Vitrage</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="vitrageCollapse">
+        <li>
+          <a >Opacité vitrage</a>
+        </li>
+        <li>
+          <a >Standards</a>
+        </li>
+        <li>
+          <a >Optionnels</a>
+        </li>
+        <li>
+          <a >Spécifique</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="dimensionsCollapse = !dimensionsCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <!--<i class="fa fa-arrows text-white" style="font-size:24px"></i>-->
+              <i class="material-icons text-white" style="font-size:24px">aspect_ratio</i>
+            </td>
+            <td class="tdName">
+              <a >Dimensions</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="dimensionsCollapse">
+        <li>
+          <a >Largeur</a>
+        </li>
+        <li>
+          <a >Hauteur</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <button (click)="accessoiresCollapse = !accessoiresCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="fa fa-home text-white" style="font-size:24px"></i>
+            </td>
+            <td class="tdName">
+              <a >Accessoires</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="accessoiresCollapse">
+        <li>
+          <a >Paumelle</a>
+        </li>
+        <li>
+          <a >Poigné</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <table>
+        <tr>
+          <td class="tdIcon">
+            <i class="fa fa-gears text-white" style="font-size:24px"></i>
+          </td>
+          <td class="tdName">
+            <a >Paramétrage</a>
+          </td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <button (click)="perspectiveCollapse = !perspectiveCollapse">
+        <table>
+          <tr>
+            <td class="tdIcon">
+              <i class="material-icons text-white" style="font-size:24px">3d_rotation</i>
+            </td>
+            <td class="tdName">
+              <a >Perspective 3D</a>
+            </td>
+          </tr>
+        </table>
+      </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="perspectiveCollapse">
+        <li>
+          <a >Rotation</a>
+        </li>
+        <li>
+          <a >Perspective</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <table>
+        <tr>
+          <td class="tdIcon">
+            <i class="fa fa-dollar text-white" style="font-size:24px"></i>
+          </td>
+          <td class="tdName">
+            <a >Prix</a>
+          </td>
+        </tr>
+      </table>
+    </li>
+  </ul>
+</div>
+<!--<ul>
+  <li>
+    <button (click)="isCollapsed = !isCollapsed">
+      <div class="d-flex justify-content-around align-items-center">
+        <a >
+          <i class="fa fa-home" style="font-size:24px"></i> Ma maison</a>
+      </div>
+    </button>
+    <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">
+      <li>
+        <a >Maisons témoins</a>
+      </li>
+      <li>
+        <a >Charger une photo</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <button (click)="isCollapsed = !isCollapsed">
+      <div class="d-flex justify-content-around align-items-center">
+        <a >Forme</a>
+      </div>
+    </button>
+      <ul (collapsed)="collapsed($event)" (expanded)="expanded($event)" [collapse]="isCollapsed">
+        <li>
+          <a >Ouverture</a>
+        </li>
+        <li>
+          <a >Type 2</a>
+        </li>
+        <li>
+          <a >Géométrique</a>
+        </li>
+      </ul>
+    </li>
+</ul>-->

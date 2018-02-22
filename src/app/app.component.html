@@ -1,0 +1,24 @@
+
+
+<div class="container-fluid con">
+    <div class="row">
+        <div class="col-md-12 p-0 con">
+            <app-header  (messageEvent)="receiveMessage($event)"  (exterieurMsg)="exterieur($event)" (interieurMsg)="interieur($event)"></app-header>
+        </div>
+    </div>
+
+    <div class="row con">
+        <div [ngClass]="{'col-md-2 con1' : sideClass === 'out','col-md-1 p-0 con' : sideClass === 'in' }" >
+            <app-sidebar></app-sidebar>
+        </div>
+
+
+        <div [ngClass]="{'col-md-10 con1' : sideClass === 'out','col-md-11 p-0 con' : sideClass === 'in' }" >
+
+            <app-content [childMessage]="exterieurMsg"></app-content>
+            <router-outlet></router-outlet>
+            <app-footer></app-footer>
+        </div>
+    </div>
+
+</div>
